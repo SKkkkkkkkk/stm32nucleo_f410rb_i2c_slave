@@ -121,14 +121,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    if(GetRxBufferState() == RxBufferReady)
-    {
-      if(RxBuffer_Process() != 0)
-      {
-        printf("RxBuffer_Process error\n\r");
-        Error_Handler();
-      }
-    }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
